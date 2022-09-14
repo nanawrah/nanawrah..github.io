@@ -4,142 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel sederhana</title>
+    <title>Nawrah wahyuni</title>
     <style>
-        .heading{
-            text-align: center;
-            color: blue;
-        }
-
-        tr{
-            text-align: center;
-        }
-
-        .ubah{
-            color: red;
-        }
-
-        .hapus{
-            color: pink;
-        }
         body{
-            background-color: pink;
+            background-color: blanchedalmond;
+        }
+
+        .tab{
+            margin-top: 10%;
+
+        }
+
+        img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 0.2rem solid brown;
+    
+        }
+
+        .wrapper{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
     </style>
+
 </head>
 <body>
-    <h1 class="heading">10 nama mahasiswa ikmi cirebon kA</h1>
-    <table border="1" width="100%">
-        <tr>
-            <th>No</th>
-            <th>NIM</th>
-            <th>Nama</th>
-            <th>kelas</th>
-            <th>alamat</th>
-            <th>aksi</th>
-            <th>aksi</th>
-        </tr>
+    <div class="wrapper">
+    <div class="child">
+    <img src="foto.jpeg" alt="me">
+    <h2>Nawrah wahyuni - 32211476</h2>   
+    <button class="tab" onclick="hellodunia()">Tabel sederhana</button>
+    <button class="tab" onclick="istilahkata()">Tabel Css</button>
+    <button class="tab" onclick="hoohtenan()">Tabel JQuery</button>
+    </div>    
+</div>
+<script>
+    function hellodunia() {
+        const lanjut = confirm("ingin membuka tabel sederhana?")
+        if (lanjut) {
+            return document.location.href = "D:pemograman web/index.html"
+        }
+        alert("membatalkan membuka tabel")
+    }
+</script> 
+<script>
+    function istilahkata() {
+      const yalanjut = confirm("Ingin membuka tabel CSS?")
+      if (yalanjut) {
+        return document.location.href = "css.html"
+    }
+        alert("membatalkan membuka tabel")
+    }
 
-        <tr>
-            <td>1</td>
-            <td>32211476</td>
-            <td>wiwin aprilia</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>2</td>
-            <td>32211477</td>
-            <td>mia soleha</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>32211478</td>
-            <td>tri intan maharani</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>4</td>
-            <td>32211479</td>
-            <td>soleha</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>32211480</td>
-            <td>nur asih</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>6</td>
-            <td>32211481</td>
-            <td>shopiyanti</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>7</td>
-            <td>32211482</td>
-            <td>tanti</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>8</td>
-            <td>32211483</td>
-            <td>ninda</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>9</td>
-            <td>32211484</td>
-            <td>umi</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>10</td>
-            <td>32211485</td>
-            <td>nawrah wahyuni</td>
-            <td>KA-KIP-P2</td>
-            <td>Cirebon</td>
-            <td class="ubah"><button>ubah</button></td>
-            <td class="hapus"><button>hapus</button></td>
-        </tr>
-    </table>
+ </script>
+ <script>
+    function hoohtenan() {
+        const lanjut = confirm("Ingin membuka tabel Jquery?")
+        if (lanjut) {
+            return document.location.href =""
+        }
+        alert("membatalkan membuka tabel")
+    }
+ </script>
+ 
 </body>
 </html>
