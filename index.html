@@ -5,15 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel sederhana</title>
+    <title>Tabel css</title>
+
     <style>
+        th{
+            background: salmon;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        th:hover{
+            background: white;
+        }
         .heading {
             text-align: center;
         }
 
         tr {
             text-align: center;
+            cursor: pointer;
+            transition: .2s;
         }
+
+        tr:hover{
+            background: white;
+        }
+
         h4{
             margin-bottom: 5%;
         }
@@ -37,7 +54,7 @@
 <body>
     <h2 class="heading">Nawrah wahyuni</h2>
     <h4 class="heading">NIM : 32211476</h4>
-    <h1 class="heading">The Top 10 Of My BestFriend</h2>
+    <h1 class="heading">The Top 5 Of My BestFriend</h2>
     <table border="1" width="100%">
         <tr>
             <th>No</th>
@@ -93,59 +110,15 @@
             <td><button>hapus</button></td>
         </tr>
 
-        <tr>
-            <td>6</td>
-            <td>32211513</td>
-            <td>Tanti</td>
-            <td>Cirebon</td>
-            <td><button>ubah</button></td>
-            <td><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>7</td>
-            <td>32211507</td>
-            <td>Soleha</td>
-            <td>Cirebon</td>
-            <td><button>ubah</button></td>
-            <td><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>8</td>
-            <td>32211493</td>
-            <td>Ninda Siti Paridah</td>
-            <td>Cirebon</td>
-            <td><button>ubah</button></td>
-            <td><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>9</td>
-            <td>32211488</td>
-            <td>Umi Lathifah</td>
-            <td>Cirebon</td>
-            <td><button>ubah</button></td>
-            <td><button>hapus</button></td>
-        </tr>
-
-        <tr>
-            <td>10</td>
-            <td>32211455</td>
-            <td>Agnes Faujia</td>
-            <td>Cirebon</td>
-            <td><button>ubah</button></td>
-            <td><button>hapus</button></td>
-        </tr>
-
     </table>
 
     <div class="tombol">
         <button>
-            <a onclick="alert('kamu mau kembali?')" href="">
+            <a onclick="alert('kamu mau kembali?')" href=" https://nanawrah.github.io/nanawrah..github.io/">
                 Back to home</a>
         </button>
     </div>
+       
 </body>
-
 </html>
+
